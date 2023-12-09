@@ -53,6 +53,7 @@ The development and testing were conducted on an operating system running Ubuntu
 git clone https://github.com/ZakariaArc/AirBnB_clone.git
 cd AirBnB_clone
 ./console.py
+```
 
 ### Execution
 
