@@ -3,57 +3,56 @@
 ## Table of Contents
 
 * [Introduction](#introduction)
-	* [Environment](#environment)
-	* [Installation](#installation)
-	* [Testing](#testing)
-	* [Usage](#usage)
-	* [Authors](#authors)
+* [Environment](#environment)
+* [Installation](#installation)
+* [Testing](#testing)
+* [Usage](#usage)
+* [Authors](#authors)
 
 ## Introduction
 
-	This project is a collaborative effort to create a clone of [AirBnB](https://www.airbnb.com/), implementing a console as a command interpreter. The console manages object abstraction, their interactions, and storage methodologies.
+This project is a collaborative effort to create a clone of [AirBnB](https://www.airbnb.com/), implementing a console as a command interpreter. The console manages object abstraction, their interactions, and storage methodologies.
 
-	To understand the foundational background of the project, visit the [Wiki](https://github.com/ralexrivero/AirBnB_clone/wiki).
+To understand the foundational background of the project, visit the [Wiki](https://github.com/ralexrivero/AirBnB_clone/wiki).
 
-	The primary tasks of the console include:
+The primary tasks of the console include:
 
-	* Creating a new object
-	* Retrieving an object from a file
-	* Performing operations on objects
-	* Destroying an object
+* Creating a new object
+* Retrieving an object from a file
+* Performing operations on objects
+* Destroying an object
 
 ### Storage
 
-	The `Storage` engine handles all classes through the `FileStorage` class.
+The `Storage` engine handles all classes through the `FileStorage` class.
 
 ## Environment
 
-	* Operating System:
-	  * [Ubuntu](https://ubuntu.com/)
-	  * Command Line Interface:
-	    * [GNU Bash](https://www.gnu.org/software/bash/)
-	    * Programming Language:
-	      * [Python](https://www.python.org)
-	      * Editors:
-	        * VIM [Vim](https://www.vim.org/)
-		  * Visual Studio Code [Visual Studio Code](https://code.visualstudio.com/)
-		    * Atom [Atom](https://atom.io/)
-		    * Version Control:
-		      * Git [Git](https://git-scm.com/)
-		      * Other tools:
-		        * Style guidelines:
-			    * [pycodestyle (version 2.7.*)](https://pypi.org/project/pycodestyle/)
-			        * [PEP8](https://pep8.org/)
+* Operating System:
+  * [Ubuntu](https://ubuntu.com/)
+* Command Line Interface:
+  * [GNU Bash](https://www.gnu.org/software/bash/)
+* Programming Language:
+  * [Python](https://www.python.org)
+* Editors:
+  * VIM [Vim](https://www.vim.org/)
+  * Visual Studio Code [Visual Studio Code](https://code.visualstudio.com/)
+  * Atom [Atom](https://atom.io/)
+* Version Control:
+  * Git [Git](https://git-scm.com/)
+* Other tools:
+  * Style guidelines:
+    * [pycodestyle (version 2.7.*)](https://pypi.org/project/pycodestyle/)
+    * [PEP8](https://pep8.org/)
 
-				The development and testing were conducted on an operating system running Ubuntu 20.04 LTS using Python 3.8.3. The editors employed were VIM 8.1.2269, VSCode 1.6.1, and Atom 1.58.0. Version control was managed via Git 2.25.1.
+The development and testing were conducted on an operating system running Ubuntu 20.04 LTS using Python 3.8.3. The editors employed were VIM 8.1.2269, VSCode 1.6.1, and Atom 1.58.0. Version control was managed via Git 2.25.1.
 
 ## Installation
 
-				```bash
-				git clone https://github.com/aysuarex/AirBnB_clone.git
-				cd AirBnB_clone
-				./console.py
-				```
+```
+git clone https://github.com/ZakariaArc/AirBnB_clone.git
+cd AirBnB_clone
+./console.py
 
 ### Execution
 
