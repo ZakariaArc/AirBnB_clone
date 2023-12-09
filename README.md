@@ -57,191 +57,191 @@ cd AirBnB_clone
 
 ### Execution
 
-				**Interactive Mode**
+**Interactive Mode**
 
-				```bash
-				$ ./console.py
-				(hbnb) help
+```
+$ ./console.py
+(hbnb) help
 
-				Documented commands (type help <topic>):
-					========================================
-						EOF  help  quit
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
 
-						(hbnb)
-	(hbnb)
-	(hbnb) quit
-	$
-	```
+(hbnb)
+(hbnb)
+(hbnb) quit
+$
+```
 
-	**Non-interactive Mode**
+**Non-interactive Mode**
 
-	```bash
-	$ echo "help" | ./console.py
-	(hbnb)
+```
+$ echo "help" | ./console.py
+(hbnb)
 
-	Documented commands (type help <topic>):
-		========================================
-			EOF  help  quit
-			(hbnb)
-			$
-			$ cat test_help
-			help
-			$
-			$ cat test_help | ./console.py
-			(hbnb)
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb)
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
 
-			Documented commands (type help <topic>):
-				========================================
-					EOF  help  quit
-					(hbnb)
-					$
-					```
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb)
+$
+```
 
 ## Testing
 
-					All tests are located in the `tests` folder.
+All tests are located in the `tests` folder.
 
 ### Documentation
 
-					* Modules:
+* Modules:
 
-					```python
-					python3 -c 'print(__import__("my_module").__doc__)'
-					```
+```python
+python3 -c 'print(__import__("my_module").__doc__)'
+```
 
-					* Classes:
+* Classes:
 
-					```python
-					python3 -c 'print(__import__("my_module").MyClass.__doc__)'
-					```
+```python
+python3 -c 'print(__import__("my_module").MyClass.__doc__)'
+```
 
-					* Functions (inside and outside a class):
+* Functions (inside and outside a class):
 
-						```python
-						python3 -c 'print(__import__("my_module").my_function.__doc__)'
-						```
+```python
+python3 -c 'print(__import__("my_module").my_function.__doc__)'
+```
 
-						And,
+And
 
-						```python
-						python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
-						```
+```python
+python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
+```
 
 ### Python Unit Tests
 
-						* Module: unittest
-						* File extension: `.py`
-						* Naming convention: Files and folders start with `test_`
-						* Organization: For `models/base.py`, unit tests reside in `tests/test_models/test_base.py`
-						* Execution command: 
-						  ```bash
-						    python3 -m unittest discover tests
-						      ```
-						        or
-							  ```bash
-							    python3 -m unittest tests/test_models/test_base.py
-							      ```
+* Module: unittest
+* File extension: `.py`
+* Naming convention: Files and folders start with `test_`
+* Organization: For `models/base.py`, unit tests reside in `tests/test_models/test_base.py`
+* Execution command: 
+```
+python3 -m unittest discover tests
+```
+or
+```
+python3 -m unittest tests/test_models/test_base.py
+```
 
 ### Run Test in Interactive Mode
 
-							      ```bash
-							      echo "python3 -m unittest discover tests" | bash
-							      ```
+```
+echo "python3 -m unittest discover tests" | bash
+```
 
 ### Run Test in Non-Interactive Mode
 
-							      For non-interactive mode and to discover all tests, use:
-							      ```bash
-							      python3 -m unittest discover tests
-							      ```
+For non-interactive mode and to discover all tests, use:
+```
+python3 -m unittest discover tests
+```
 
 ## Usage
 
-							      * Start the console in interactive mode:
+* Start the console in interactive mode:
 
-							      ```bash
-							      $ ./console.py
-							      (hbnb)
-	```
+```
+$ ./console.py
+(hbnb)
+```
 
-	* Use help to see available commands:
+* Use help to see available commands:
 
-	```bash
-	(hbnb) help
+```
+(hbnb) help
 
-	Documented commands (type help <topic>):
-		========================================
-			EOF  all  count  create  destroy  help  quit  show  update
+Documented commands (type help <topic>):
+========================================
+EOF  all  count  create  destroy  help  quit  show  update
 
-			(hbnb)
-	```
+(hbnb)
+```
 
-	* Quit the console:
+* Quit the console:
 
-	```bash
-	(hbnb) quit
-	$
-	```
+```
+(hbnb) quit
+$
+```
 
 ### Commands
 
-	Commands are displayed in the following format: *Command / usage / example with output*
+Commands are displayed in the following format: *Command / usage / example with output*
 
-	* **Create**
+**Create**
 
-	```bash
-	create <class>
-	```
+```
+create <class>
+```
 
-	Example:
+Example:
 
-	```bash
-	(hbnb) create BaseModel
-	6cfb47c4-a434-4da7-ac03-2122624c3762
-	(hbnb)
-	```
+```
+(hbnb) create BaseModel
+6cfb47c4-a434-4da7-ac03-2122624c3762
+(hbnb)
+```
 
-	* **Show**
+**Show**
 
-	```bash
-	show <class> <id>
-	```
+```
+show <class> <id>
+```
 
-	Example:
+Example:
 
-	```bash
-	(hbnb) show BaseModel 6cfb47c4-a434-4da7-ac03-2122624c3762
-	[BaseModel] (a) [BaseModel] (6cfb47c4-a434-4da7-ac03-2122624c3762) {'id': '6cfb47c4-a434-4da7-ac03-2122624c3762', 'created_at': datetime.datetime(2021, 11, 14, 3, 28, 45, 571360), 'updated_at': datetime.datetime(2021, 11, 14, 3, 28, 45, 571389)}
-	(hbnb)
-	```
+```
+(hbnb) show BaseModel 6cfb47c4-a434-4da7-ac03-2122624c3762
+[BaseModel] (a) [BaseModel] (6cfb47c4-a434-4da7-ac03-2122624c3762) {'id': '6cfb47c4-a434-4da7-ac03-2122624c3762', 'created_at': datetime.datetime(2021, 11, 14, 3, 28, 45, 571360), 'updated_at': datetime.datetime(2021, 11, 14, 3, 28, 45, 571389)}
+(hbnb)
+```
 
-	* **Destroy**
+**Destroy**
 
-	```bash
-	destroy <class> <id>
-	```
+```
+destroy <class> <id>
+```
 
-	Example:
+Example:
 
-	```bash
-	(hbnb) create User
-	0c98d2b8-7ffa-42b7-8009-d9d54b69a472
-	(hbnb) destroy User 0c98d2b8-7ffa-42b7-8009-d9d54b69a472
-	(hbnb) show User 0c98d2b8-7ffa-42b7-8009-d9d54b69a472
-	** no instance found **
-	(hbnb)
-	```
+```
+(hbnb) create User
+0c98d2b8-7ffa-42b7-8009-d9d54b69a472
+(hbnb) destroy User 0c98d2b8-7ffa-42b7-8009-d9d54b69a472
+(hbnb) show User 0c98d2b8-7ffa-42b7-8009-d9d54b69a472
+** no instance found **
+(hbnb)
+```
 
-	* **All**
+**All**
 
-	```bash
-	all <class>
-	```
+```
+all <class>
+```
 
-	Example:
+Example:
 
-	```bash
-	(hbnb) create BaseModel
-	e45ddda9-eb80-4858-99a9-226d4f08a629
-	(hbnb) all BaseModel
-	["[BaseModel] (4c8f7ebc-257f-4ed1-b26b-e7aace459897) [BaseModel] (4c8f7ebc-257f-4ed1-b26b-e7aace459897) {'id': '4c8f7ebc-257f-4ed1-b26b-e7aace459897', 'created_at': datetime.datetime(2021, 11, 13, 22, 19, 19, 447155), 'updated_at': datetime.datetime(2021, 11, 13, 22, 19,
+```
+(hbnb) create BaseModel
+e45ddda9-eb80-4858-99a9-226d4f08a629
+(hbnb) all BaseModel
+["[BaseModel] (4c8f7ebc-257f-4ed1-b26b-e7aace459897) [BaseModel] (4c8f7ebc-257f-4ed1-b26b-e7aace459897) {'id': '4c8f7ebc-257f-4ed1-b26b-e7aace459897', 'created_at': datetime.datetime(2021, 11, 13, 22, 19, 19, 447155), 'updated_at': datetime.datetime(2021, 11, 13, 22, 19,
